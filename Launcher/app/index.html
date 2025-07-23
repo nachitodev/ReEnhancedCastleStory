@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Castle Story</title>
+  <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+  <div class="modal-wrapper"></div>
+
+  <div id="credits">
+    <a href="#" class="close js-close-credits">X</a>
+    <div class="content">
+      <div class="partners">
+        <h2><span class='en'>In Partnership</span><span class='fr'>En association</span></h2>
+        <h3><span class='en'>With</span><span class='fr'>avec</span></h3>
+        <div class="partner-list">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="fullcontent">
+
+    <!-- <div class="video-cover">
+        <video
+          preload=""
+          muted=""
+          loop=""
+          autoplay=""
+          poster="http://heap-castlestory.s3.amazonaws.com/hdh0ea1j96f4f/home_video_poster.jpg">
+            <source src="http://heap-castlestory.s3.amazonaws.com/hdh0ea1j96f4f/mp4.mp4" type="video/mp4">
+            <source src="http://heap-castlestory.s3.amazonaws.com/hdh0ea1j96f4f/webm.webm" type="video/webm">
+        </video>
+      </div> -->
+
+    <header style="-webkit-app-region: drag">
+      <h1>ReEnhanced Castle Story</h1>
+
+      <div class="social-nav-holder" style="-webkit-app-region: drag">
+        <div class="social-nav">
+          <a href="https://discord.gg/qFWjyb2yHU" class="js-ext-link">discord</a>
+          <div class="minimize-wrapper js-minimize">
+            <img class="minimize-img"></img>
+          </div>
+          <div class="close-wrapper js-close">
+            <img class="close-img"></img>
+          </div>
+        </div>
+      </div>
+
+      <div class="right">
+        <nav>
+          <a class="js-ext-link" href="https://discord.gg/qFWjyb2yHU">chat</a>
+          <a class="js-ext-link" href="https://discord.gg/qFWjyb2yHU">support</a>
+          <a class="js-open-credits" href="#"><span class='en'>credits</span><span class='fr'>crédits</span></a>
+        </nav>
+
+        <div class="profile">
+          <p>welcome,<span></span></p>
+          <img src="" width="43" height="56" />
+        </div>
+
+        <div class="signin js-signin open-modal">
+          <h2>SIGN IN / SIGN UP</h2>
+        </div>
+      </div>
+
+      <div class="bottom-nav">
+        <a class="js-ext-link" href="http://www.castlestory.net/en/account/profile">profile</a>
+        <span>|</span>
+        <a class="js-signout" href="#">sign out</a>
+      </div>
+    </header>
+
+    <main>
+      <div class="left-col">
+
+        <div class="box video">
+          <h2 class="latest-update"><span class='en'>our Latest update is</span><span class='fr'>Notre dernière version
+              est</span> <span id="lastest-update-version"><strong>version 1.0</strong></span></h2>
+
+          <div class="video-wrapper">
+
+          </div>
+
+          <a id="latest-update-link" href="" class="js-ext-link">
+            <span id="latest-update-excerpt">
+              Were looking for people to create new source code and help the reverse engineering join the Discord!
+            </span>
+            <div class="read-more">
+              <span><span class='en'>read more</span><span class='fr'>Lire la suite</span></span>
+              <span class="arrow"></span>
+            </div>
+          </a>
+        </div>
+
+        <div class="box link">
+          <a id="minor-update-link" href="#" class="js-ext-link">
+            <span>
+              <span id="minor-update-title" class="title"></span>
+              <span id="minor-update-excerpt"></span>
+            </span>
+          </a>
+        </div>
+
+      </div>
+      <div class="right-col">
+
+        <div class="alert-wrapper">
+        </div><!-- end of alert-wrapper -->
+
+        <div class="bottom">
+
+          <div class="box">
+            <h2><span class='en'>Settings</span><span class='fr'>Settings</span></h2>
+            <label><span class='en'>RESOLUTION</span><span class='fr'>RÉSOLUTION</span></label>
+            <span class="select-wrapper resolution">
+              <select>
+                <option value="1024x768">1024 X 768</option>
+                <option value="1152x864">1152 X 864</option>
+                <option value="1280x720">1280 X 720</option>
+                <option value="1280x768" selected>1280 X 768</option>
+                <option value="1280x800">1280 X 800</option>
+                <option value="1280x1024">1280 X 1024</option>
+                <option value="1360x768">1360 X 768</option>
+                <option value="1366x768">1366 X 768</option>
+                <option value="1440x900">1440 X 900</option>
+                <option value="1600x900">1600 X 900</option>
+                <option value="1600x1200">1600 X 1200</option>
+                <option value="1680x1050">1680 X 1050</option>
+                <option value="1920x1080">1920 X 1080</option>
+                <option value="1920x1200">1920 X 1200</option>
+                <option value="2560x1440">2560 X 1440</option>
+                <option value="2560x1600">2560 X 1600</option>
+                <option value="3840x2160">3840 X 2160</option>
+              </select>
+            </span>
+            <!--<label><span class='en'>DIRECTX</span><span class='fr'>DIRECTX</span></label>
+              <span class="select-wrapper resolution">
+                <select>
+                  <option value="directx11" selected>DirectX 11</option>
+                  <option value="directx9">DirectX 9</option>
+                </select>
+              </span>-->
+
+            <span class="monitor-selector">
+              <label><span class='en'>MONITOR</span><span class='fr'>ÉCRAN</span></label>
+              <span class="select-wrapper monitor">
+                <select>
+                  <option value="1" selected>1</option>
+                </select>
+              </span>
+            </span>
+            <div class="checkbox-fullscreen">
+              <label><span class='en'>LAUNCH IN FULLSCREEN</span><span class='fr'>MODE PLEIN ÉCRAN</span></label>
+              <div id="checkbox-border">
+                <div id="fs-checkbox" class="custom-checkbox checked"></div>
+              </div>
+            </div>
+            <!--<label>LANGUAGE</label>
+              <span class="select-wrapper">
+                <select>
+                  <option>ENGLISH</option>
+                  <option>FRENCH</option>
+                </select>
+              </span>-->
+          </div>
+
+          <button class="box play"><span class='en'>Play</span><span class='fr'>Jouer</span></button>
+
+        </div><!-- End of bottom -->
+
+      </div>
+
+    </main>
+
+    <footer>
+      <p class="fleft">© In Memory of Sauropod Studio by ReEnhanced Community, <span class='en'>all rights
+          reserved</span><span class='fr'>tous droits
+          réservés</span></p>
+      <a href="http://www.castlestory.net/" class="logo js-ext-link">Sauropod</a>
+    </footer>
+
+  </div><!-- end of fullcontent -->
+
+  <!--<a class="issue" href="http://www.castlestory.net">Report a bug in the Issue Council</a>-->
+
+
+</body>
+<script>window.$ = window.jQuery = require('./js/jquery-3.1.1.js');</script>
+<script>
+  // You can also require other files to run in this process
+  require('./js/index.js');
+  // require('./js/modal.js');
+</script>
+
+</html>

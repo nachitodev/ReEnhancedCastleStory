@@ -1,0 +1,37 @@
+{
+  "name": "castlestory-launcher",
+  "version": "0.0.1",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "pack": "electron-packager ./ castlestory-launcher --all --out ./ --overwrite",
+    "pack:win32": "electron-packager ./ castlestory-launcher --platform=win32 --arch=ia32 --out ./ --overwrite --icon=app/images/cs_icon.ico",
+    "pack:win64": "electron-packager ./ castlestory-launcher --platform=win32 --arch=x64 --out ./ --overwrite --icon=app/images/cs_icon.ico",
+    "pack:linux32": "electron-packager ./ castlestory-launcher --platform=linux --arch=ia32 --out ./ --overwrite --icon=app/images/cs_icon.ico",
+    "pack:linux64": "electron-packager ./ castlestory-launcher --platform=linux --arch=x64 --out ./ --overwrite --icon=app/images/cs_icon.ico",
+    "pack:osx": "electron-packager ./ castlestory-launcher --platform=darwin --arch=x64 --out ./ --overwrite --icon=app/images/cs_icon.ico"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nachitodev/ReEnhancedCastleStory.git"
+  },
+  "author": "ReEnhanced Team",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nachitodev/ReEnhancedCastleStory/issues"
+  },
+  "homepage": "https://github.com/nachitodev/ReEnhancedCastleStory#readme",
+  "devDependencies": {
+    "electron": "^1.8.8",
+    "electron-packager": "^8.7.2"
+  },
+  "dependencies": {
+    "@electron/packager": "^18.3.6",
+    "electron-json-storage": "^3.2.0",
+    "js-md5": "^0.4.2",
+    "less": "^2.7.3",
+    "less-plugin-autoprefix": "^1.5.1",
+    "moment": "^2.30.1"
+  }
+}
