@@ -27,11 +27,9 @@
     "electron-packager": "^8.7.2"
   },
   "dependencies": {
-    "@electron/packager": "^18.3.6",
+    "@electron/packager": "^18.4.4",
     "electron-json-storage": "^3.2.0",
     "js-md5": "^0.4.2",
-    "less": "^2.7.3",
-    "less-plugin-autoprefix": "^1.5.1",
     "moment": "^2.30.1"
   }
 }
